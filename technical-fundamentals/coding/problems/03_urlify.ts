@@ -11,9 +11,9 @@ export default function URLify(s1: string): string {
   let word = "";
   for (let i = 0; i < s1.length; i++) {
     if (s1[i] === " ") {
-      word = `${word}%20`;
+      word += "%20";
     } else {
-      word = word + s1[i];
+      word += s1[i];
     }
   }
 
